@@ -1,0 +1,234 @@
+// 首页底部tabbar
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.49rem;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  background-color: #fff;
+  font-size: 0.1rem;
+  .tab-bar-item {
+    width: 50%;
+    .tab-text {
+      font-size: 0.1rem;
+      color: #808080;
+      margin-top: 0.04rem;
+      &.active {
+        color: #dd2f3c;
+      }
+    }
+  }
+}
+// 横向navbar
+.nav-bar-container {
+  padding-right: 0.15rem;
+  border-top: 1px solid #eee;
+  .nav-bar {
+    width: 100%;
+    height: 0.4rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    .nav-item {
+      display: inline-block;
+      padding: 0 0.15rem;
+      text-align: center;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      font-size: 0.15rem;
+      color: #333333;
+      &.active {
+        font-weight: 500;
+        color: rgba(221, 47, 60, 1);
+      }
+    }
+  }
+}
+// 图集列表头部 左返回 中间标题
+header {
+  height: 0.64rem;
+  background-color: #fff;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: 999;
+  .list-header {
+    position: relative;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    height: 0.64rem;
+    i {
+      position: absolute;
+      top: 0.22rem;
+      left: 0.2rem;
+    }
+    .title {
+      width: 100%;
+      text-align: center;
+      font-size: 0.18rem;
+      font-family: SourceHanSansCN;
+      font-weight: 500;
+      color: rgba(221, 47, 60, 1);
+      line-height: 0.44rem;
+    }
+  }
+}
+// 图集列表小图样式
+.img-item {
+  width: 1.68rem;
+  img {
+    width: 100%;
+    height: 1rem;
+  }
+  .img-info {
+    height: 0.74rem;
+    padding: 0.08rem;
+    background-color: #fff;
+    .info {
+      display: flex;
+      justify-content: space-between;
+    }
+    .title {
+      font-size: 0.14rem;
+      font-family: SourceHanSansCN;
+      font-weight: 500;
+      color: rgba(51, 51, 51, 1);
+      line-height: 0.2rem;
+      height: 0.36rem;
+      white-space: normal !important;
+    }
+    .date {
+      font-size: 0.12rem;
+      color: #848484;
+      margin-top: 0.08rem;
+    }
+  }
+}
+.status {
+  width: 0.38rem;
+  height: 0.18rem;
+  line-height: 0.18rem;
+  text-align: center;
+  font-size: 0.09rem;
+  color: #fff;
+  border-radius: 0.12rem;
+  position: absolute;
+  top: 0.08rem;
+  right: 0.12rem;
+  &.checking {
+    background: rgba(245, 166, 35, 1);
+  }
+  &.checked {
+    background: #41a856;
+  }
+  &.ban {
+    background: #d0021b;
+  }
+  &.published{
+    background: #999999;
+  }
+  &.remain {
+    background: #3688ff;
+  }
+}
+// 表单样式
+.info-item {
+  padding-left: 0.12rem;
+  position: relative;
+  margin-bottom: 0.24rem;
+  p {
+    font-size: 0.14rem;
+    &.left {
+      width: 0.42rem;
+      height: 0.2rem;
+      color: #888888;
+      text-align: justify;
+      margin-right: 0.25rem;
+      i {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    &.right {
+      color: rgba(51, 51, 51, 1);
+      width: 2.58rem;
+    }
+  }
+  .required {
+    position: absolute;
+    font-size: 0.1rem;
+    color: red;
+    top: 0.06rem;
+    left: 0.06rem;
+    transform: translate(-50%, -50%);
+  }
+  .moreIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .lockIcon {
+    width: 0.12rem;
+    height: 0.15rem;
+    position: absolute;
+    right: 0.05rem;
+  }
+  input {
+    width: 2.58rem;
+    height: 0.2rem;
+    font-size: 0.14rem;
+    color: rgba(51, 51, 51, 1);
+    position: absolute;
+    top: -0.06rem;
+    left: 0.78rem;
+    &::-webkit-input-placeholder {
+      color: #a6a6a6;
+      font-size: 0.14rem;
+      transform: translate(0, 0.02rem);
+    }
+  }
+}
+// 加载更多
+.load-more {
+  margin-top: 0.3rem;
+  .icon {
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-right: 0.08rem;
+  }
+  p {
+    font-size: 0.12rem;
+    color: #d4d4d4;
+  }
+}
+/* 没有数据图片样式 */
+.no-data-img {
+  display: block;
+  margin: 0 auto;
+  &.pt15 {
+    padding-top: 0.15rem;
+  }
+  &.style1 {
+    width: 3.45rem;
+    height: 2.22rem;
+  }
+  &.style2 {
+    height: 1.22rem;
+  }
+  &.style3 {
+    width: 1.68rem;
+    height: 1rem;
+  }
+}
+.no-data-text{
+  width: 100%;
+  color:#d4d4d4;
+  font-size: 0.15rem;
+  text-align: center;
+  padding: 0.2rem 0;
+}
